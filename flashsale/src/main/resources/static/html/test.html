@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购买产品测试</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<script>
+    for (let i = 0; i < 100; i++) {
+        let params = {
+            userId: 1,
+            productId: 1,
+            quantity: 3
+        };
+        $.post("../../purchase", params, function (result) {
+            alert(result.message)
+        })
+    }
+</script>
+<body>
+ehllo
+</body>
+</html>
